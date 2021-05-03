@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Border-Radius Previewer</title>
+  </head>
+  <body>
+    <h1><span>Border Radius</span> Previewer</h1>
+    <div class="shape shape--radius"></div>
+
+    <div class="button-container">
+      <button id="all">All</button>
+      <button id="specific">Specific</button>
+    </div>
+
+    <div class="modify">
+      <div id="around-input">
+        <label for="around">Border Radius</label>
+        <input
+          type="text"
+          id="around"
+          class="input"
+          name="around"
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="specific-input">
+        <div>
+          <label for="">Top Left: </label>
+          <input
+            type="text"
+            id="top-left"
+            class="input"
+            name="top-left"
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="">Top Right: </label>
+          <input
+            type="text"
+            id="top-right"
+            class="input"
+            name="top-right"
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="">Bottom Left: </label>
+          <input
+            type="text"
+            id="bottom-left"
+            class="input"
+            name="bottom-left"
+            autocomplete="off"
+          />
+        </div>
+
+        <div>
+          <label for="">Bottom Right: </label>
+          <input
+            type="text"
+            id="bottom-right"
+            class="input"
+            name="bottom-right"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <button id="change-button">Change</button>
+    </div>
+    <form class="unit">
+      <div class="radio-box">
+        <input type="radio" id="pixel" name="type" value="px" />
+        <label for="pixel">Pixel</label>
+      </div>
+
+      <div class="radio-box">
+        <input type="radio" id="percantage" name="type" value="%" />
+        <label for="percantage">%</label>
+      </div>
+      <div class="radio-box">
+        <input type="radio" id="rem" name="type" value="rem" />
+        <label for="rem">Rem</label>
+      </div>
+      <div class="radio-box">
+        <input type="radio" id="em" name="type" value="em" />
+        <label for="em">Em</label>
+      </div>
+    </form>
+  </body>
+</html>
